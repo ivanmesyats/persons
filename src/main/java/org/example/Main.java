@@ -22,19 +22,19 @@ public class Main {
 
         ArrayList<Integer> numbers = new ArrayList<Integer>();
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i < n+1; i++) {
 
             numbers.add(i);
 
 
         }
 
-        while (numbers.size() > 1) {
+        while (numbers.size()  > 1) {
 
 
             System.out.println(numbers);
 
-            numbers.remove(0);
+            numbers.remove(1);
 
             System.out.println(numbers);
 
@@ -81,9 +81,30 @@ public class Main {
         }
         System.out.println(newNumbers.size() + " " + newNumbers.get(0));
 
+        System.out.println("extra implementation");
+
+        int size2 = 5;
+        ArrayList<Integer> numbers2 = new ArrayList<Integer>();
+
+        for (int i=1 ; i <= size2; i++){
+            numbers2.add(i);
+        }
+
+        System.out.println(numbers2);
+
+        while (numbers2.size() > 1) {
+            for (int i = 0; i < numbers2.size() - 1; i++) {
+                //System.out.println(numbers.get(j));
+                System.out.println(numbers2.remove(i + 1));
+            }
+            System.out.println(numbers2);
+        }
+
+
     }
 
     }
+
 
 
 
